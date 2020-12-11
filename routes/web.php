@@ -15,3 +15,5 @@ Route::get('/about', function () {
 });
 
 Route::get('/cars', [CarController::class, 'index']);
+
+Route::get('/cars/{id}', [CarController::class, 'show'])->name('cars.single');
