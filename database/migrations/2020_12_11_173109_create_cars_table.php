@@ -15,10 +15,12 @@ class CreateCarsTable extends Migration
     {
         Schema::create('cars', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->string('producer');
+            $table->unsignedInteger('number_of_doors');
             $table->timestamps();
         });
     }
-
     /**
      * Reverse the migrations.
      *
