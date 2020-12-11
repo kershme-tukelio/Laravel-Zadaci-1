@@ -3,6 +3,11 @@
         <title>Welcome to Cars Project</title>
     </head>
     <body>
-        <h1>Welcome to Cars Project!</h1>
+        <div>
+            <h1>Welcome {{$name}}!</h1>
+            <p>
+                I'm {{$age}} years old!
+            </p>
+        </div>
     </body>
 </html>
